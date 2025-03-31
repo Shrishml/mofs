@@ -15,7 +15,9 @@ mofs/
 ├── data_source(ph)/                    # Data sources (placeholder)
 ├── estimators(ph)/                     # Statistical estimators (placeholder)
 ├── copilot(ph)/                        # Interactive copilot features (placeholder)
-├── experiment.ipynb                    # Main research notebook
+├── experiment.ipynb                    # Experiment notebook
+├── demo_tariff.ipynb                   # Demo notebook for trade tariff impact analysis
+├── demo_low_fertility_rate.ipynb       # Demo notebook for declining fertility rate impact analysis
 ├── requirements.txt                    # Project dependencies
 ├── .env                                # Environment variables (API keys)
 └── .gitignore                          # Git ignore file
@@ -38,17 +40,17 @@ mofs/
 ### 🔄 In Progress
 - Inter-theme optimization
 - Risk analysis improvements
-- Custom market estimators
+- More market estimators
 
 ### 📋 Planned Features (Not Yet Implemented)
 - Political, Technology, and Social research agents (ph)
 - Price movement clustering (ph)
 - Major player tracking (ph)
-- Game theoretical analysis (ph)
+- Game theoretical analysis on major players(ph)
 
 ## Data Sources
-- ✅ Tavily API for web search and content extraction
-- ✅ Yahoo Finance for historical price data
+- ✅ Tavily API for web search and content extraction(integrated into services)
+- ✅ Yahoo Finance for historical price data(integrated into optimizers)
 - 📋 News and media analysis (planned)
 - 📋 Social media and Reddit (planned)
 - 📋 Earnings calls analysis (planned)
@@ -156,6 +158,15 @@ for ticker, weight in result.weights.items():
 optimizer.plot()
 ```
 
+## Demo Notebooks
+
+We have two demo notebooks available to showcase the capabilities of the MOFS framework:
+
+- [Trade Tariff Impact Analysis](demo_tariff.ipynb): Demonstrates how to research companies that could benefit from trade tariffs and optimize a portfolio based on findings.
+- [Declining Fertility Rate Impact Analysis](demo_low_fertility_rate.ipynb): Explores investment opportunities related to declining fertility rates.
+
+These notebooks provide practical examples of how to use the deep research and portfolio optimization features of the framework.
+
 ## Development
 
 ### Future Modules
@@ -164,6 +175,3 @@ We plan to expand the framework with these additional components:
 - Advanced clustering techniques for price movement analysis
 - Custom covariance matrix estimators for better risk assessment
 
-## License
-
-[MIT License] - Feel free to use, modify, and distribute this code for both personal and commercial use. # mofs
